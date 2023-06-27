@@ -20,3 +20,8 @@ let code = document.querySelector('#code'); // Получаем скрытый i
   document.querySelector('.btn').onclick = function(){ // Клик по кнопке отправки
     code.value = 'NOSPAM'; // Подставляем значение в value инпута
   };
+
+  let code_modal = document.querySelector('#code_modal'); // Получаем скрытый input
+  document.querySelector('.btn').onclick = function(){ // Клик по кнопке отправки
+    code.value = 'NOSPAM'; // Подставляем значение в value инпута
+  };
