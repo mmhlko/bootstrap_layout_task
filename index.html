@@ -109,23 +109,6 @@
                           </div>
                         
                     </div>
-                    <!-- <div class="digigtal__securities_cards d-flex flex-wrap justify-content-around">
-                        <div class="digigtal__securities_card d-flex flex-column">
-                            <img src="./img/2_card1.svg" alt="">
-                            <h3 class="digigtal__securities_card_title text-center">Invest Any Amount </h3>
-                            <p class="digigtal__securities_card_title text-center">Start with as little as $1, buy parts of a whole share </p>
-                        </div>
-                        <div class="digigtal__securities_card d-flex flex-column">
-                            <img src="./img/2_card1.svg" alt="">
-                            <h3 class="digigtal__securities_card_title text-center">Invest Any Amount </h3>
-                            <p class="digigtal__securities_card_title text-center">Start with as little as $1, buy parts of a whole share </p>
-                        </div>
-                        <div class="digigtal__securities_card d-flex flex-column">
-                            <img src="./img/2_card1.svg" alt="">
-                            <h3 class="digigtal__securities_card_title text-center">Invest Any Amount </h3>
-                            <p class="digigtal__securities_card_title text-center">Start with as little as $1, buy parts of a whole share </p>
-                        </div>
-                    </div> -->
                     <form class="d-flex digigtal__securities_form justify-content-center w-100 flex-wrap">
                         <input class="form__item" type="text" placeholder="E-mail*">
                         <button class="form__item btn ds_btn button" type="submit">Get Early Access</button>
@@ -133,13 +116,13 @@
                 </div>
             </div>
         </section>
-        <section class="digital__assets">
+        <div class="digital__assets">
             <div class="container">
                 <div class="digital__assets_text text-center">
                     Digital Assets are the future of private equity <br> - Deloitte
                 </div>
             </div>
-        </section>
+          </div>
         <section class="products" id="products">
             <div class="container">
                 <div class="products_content">
@@ -256,7 +239,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                       <div class="card card__content">
-                        <img src="./img/pic 1.png" class="card-img-top" alt="...">
+                        <img src="./img/pic 1.png" class="card-img-top" alt="pictire">
                         <div class="card-body card__text">
                           <h5 class="card-title">02.06.20</h5>
                           <p class="card-text">In expression an solicitude principles in do. Small for ask shade water manor think men begin. At principle perfectly by sweetness do.</p>
@@ -265,7 +248,7 @@
                     </div>
                     <div class="col">
                       <div class="card card__content">
-                        <img src="./img/pic 2.png" class="card-img-top" alt="...">
+                        <img src="./img/pic 2.png" class="card-img-top" alt="pictire">
                         <div class="card-body card__text">
                           <h5 class="card-title">02.06.20</h5>
                           <p class="card-text">In expression an solicitude principles in do. Small for ask shade water manor think men begin. At principle perfectly by sweetness do.</p>
@@ -274,7 +257,7 @@
                     </div>
                     <div class="col">
                       <div class="card card__content">
-                        <img src="./img/pic 3.png" class="card-img-top" alt="...">
+                        <img src="./img/pic 3.png" class="card-img-top" alt="pictire">
                         <div class="card-body card__text">
                           <h5 class="card-title">02.06.20</h5>
                           <p class="card-text">In expression an solicitude principles in do. Small for ask shade water manor think men begin. At principle perfectly by sweetness do.</p>
@@ -302,10 +285,9 @@
                         <input class="contact_input" id="form_company" type="text">
                         <label for="form_email">Email*</label>
                         <input class="contact_input" id="form_email" type="text">
-                        <label for="form_message">Message</textarea></label> 
+                        <label for="form_message">Message</label> 
                         <textarea id="form_message" name="message" cols="30" rows="10"></textarea>
-                        <input type="hidden" name="code" value="" id="code"/>
-                        <div></div>
+                        <input type="hidden" name="code" value="" id="code">
                         <button class="btn button contact__form_btn" type="submit">Send</button>                       
                     </form>
                     
@@ -357,15 +339,15 @@
         <div class="modal-body justify-content-center singup__modal_body">
           <h5 class="modal__title text-center" id="exampleModalLabel">Singnup For Free</h5>
              <form class="contact__form flex-grow-1 modal__form" onsubmit="deleteName(this);return false;">
-                <label for="form_name">Name</label>
-                <input class="contact_input" id="form_name" type="text" >
-                <label for="form_company">Company</label>
-                <input class="contact_input" id="form_company" type="text">
-                <label for="form_email">Email*</label>
-                <input class="contact_input" id="form_email" type="email" >
-                <label for="form_message">Message*</textarea></label> 
-                <textarea id="form_message" name="message" cols="30" rows="10"></textarea>
-                <input type="hidden" name="code" value="" id="code"/>
+                <label for="form__name_modal">Name</label>
+                <input class="contact_input" id="form__name_modal" type="text" >
+                <label for="form_company_modal">Company</label>
+                <input class="contact_input" id="form_company_modal" type="text">
+                <label for="form_email_modal">Email*</label>
+                <input class="contact_input" id="form_email_modal" type="email" >
+                <label for="form_message_modal">Message*</label> 
+                <textarea id="form_message_modal" name="message" cols="30" rows="10"></textarea>
+                <input type="hidden" name="code" value="" id="code">
                 <div></div>
                 <button id="singup__send_btn" class="btn button contact__form_btn" type="submit" data-bs-toggle="modal" data-bs-target="#singup__send">Send</button>                       
             </form>            
