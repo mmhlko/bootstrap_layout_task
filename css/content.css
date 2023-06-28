@@ -121,6 +121,7 @@
 #business__row .business__col {
     padding: 0 10px;
     min-width: 320px;
+    display: flex;
 }
 .business__cards{
     gap: 20px;
@@ -150,6 +151,10 @@
 }
 
 /* section 6 */
+
+.row .blog_col {
+    display: flex;
+}
 
 .blog__card {
     min-width: 320px;
