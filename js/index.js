@@ -5,7 +5,7 @@ const formModal = document.getElementById('form__modal')
 singupBtn.addEventListener('click', () => {
   document.querySelector('.singup__modal_body').classList.remove('hidden')
   document.querySelector('.form__send').classList.add('hidden')
-  document.querySelectorAll('input, textarea').forEach(item => item.value = '')
+  document.querySelectorAll('#form__modal > input, #form__modal > textarea').forEach(item => item.value = '')
 })
 
 formModal.addEventListener('submit', function (event) {
