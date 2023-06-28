@@ -2,10 +2,12 @@
 
 #header.header__menu {
     height: 105px;
-    display: flex;
-    align-items: center;
     background-color: #ffffff;
         
+}
+
+#header .header__nav {
+    padding-top: 20px;
 }
 .menu {
     justify-content: space-between;
@@ -96,7 +98,9 @@
         background-image: url('../img/social_media/m_black.png'); 
     }
     .collapse_menu {
-        margin: 291px -12px -12px -12px;
+        /* margin: 291px -12px -12px -12px; */
+        position: relative;
+        top: 37px;
         background-color: var(--color-main-bg);
     }
 }
