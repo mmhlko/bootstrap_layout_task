@@ -356,7 +356,7 @@
       <div class="modal-content">
         <div class="modal-body justify-content-center singup__modal_body">
           <h5 class="modal__title text-center" id="exampleModalLabel">Singnup For Free</h5>
-          <form class="contact__form flex-grow-1 modal__form" onsubmit="console.log('submit');return false;">
+          <form class="contact__form flex-grow-1 modal__form" id="form__modal">
             <label for="form__name_modal">Name</label>
             <input class="contact_input" id="form__name_modal" type="text">
             <label for="form_company_modal">Company</label>
@@ -367,8 +367,7 @@
             <textarea id="form_message_modal" name="message" cols="30" rows="10" required></textarea>
             <input type="hidden" name="code" value="" id="code_modal">
             <div></div>
-            <button class="btn button contact__form_btn" id="send__form_modal" type="submit" data-bs-toggle="modal"
-              data-bs-target="#singup__send">Send</button>
+            <button class="btn button contact__form_btn" type="submit">Send</button>
           </form>
         </div>
         <div class="form__send hidden">
