@@ -1,7 +1,11 @@
 /* header */
 
-.header__menu {
+#header.header__menu {
     height: 105px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+        
 }
 .menu {
     justify-content: space-between;
