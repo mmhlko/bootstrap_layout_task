@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sibcode test bootstrap 5</title>
   <link rel="stylesheet" href="./index.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap"
     rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" data-skip-moving="true"></script>
   <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv-printshiv.min.js" data-skip-moving="true"></script>
   <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js" data-skip-moving="true"></script>
@@ -28,7 +28,7 @@
             <span></span>
           </button>
           <div class="collapse navbar-collapse collapse_menu" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center flex-grow-1">
               <li class="nav-item">
                 <a class="nav-link" href="#securities">What Are Digital Securities?</a>
               </li>
@@ -71,7 +71,7 @@
           <div class="main__section_text d-flex flex-column">
             <span class="main__subtitle">Equiteez is on a mission to make private equity easily accesible to all in
               vestors</span>
-            <button type="button" class="btn button btn-dark singup__btn" data-bs-toggle="modal"
+            <button type="button" class="btn button btn-dark" id="singup__btn" data-bs-toggle="modal"
               data-bs-target="#singup__modal">Singnup For Free</button>
           </div>
         </div>
@@ -120,7 +120,7 @@
           </div>
           <form class="d-flex digigtal__securities_form justify-content-center w-100 flex-wrap">
             <input class="form__item" type="text" placeholder="E-mail*">
-            <button class="form__item btn ds_btn button" type="submit">Get Early Access</button>
+            <button class="form__item btn button" id="ds_btn" type="submit">Get Early Access</button>
           </form>
         </div>
       </div>
@@ -156,7 +156,7 @@
       <div class="container">
         <div class="business_content">
           <h2 class="section__title text-center">Digitize Your Business</h2>
-          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" id="business__row">
             <div class="col business__col">
               <div class="card business__card">
                 <img class="business__card_icon" src="./img/5_card1.svg" alt="card_icon">
@@ -278,7 +278,7 @@
             </div>
 
           </div>
-          <button class="btn blog__btn button">View all news</button>
+          <button class="btn button" id="blog__btn">View all news</button>
         </div>
       </div>
     </section>
@@ -313,7 +313,7 @@
       <nav class="footer__nav">
         <a class="navbar-brand logo__footer" href="#"><img src="./img/logo-lg.svg" alt="logo"></a>
 
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" id="footer_list">
           <li class="nav-item">
             <a class="nav-link footer__link" href="#securities">What Are Digital Securities?</a>
           </li>
@@ -348,7 +348,7 @@
 
   <!-- Modal -->
   <div class="modal fade" id="singup__modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal_box">
+    <div class="modal-dialog" id="modal_box">
       <div class="modal-content">
         <div class="modal-body justify-content-center singup__modal_body">
           <h5 class="modal__title text-center" id="exampleModalLabel">Singnup For Free</h5>
@@ -363,7 +363,7 @@
             <textarea id="form_message_modal" name="message" cols="30" rows="10"></textarea>
             <input type="hidden" name="code" value="" id="code_modal">
             <div></div>
-            <button id="singup__send_btn" class="btn button contact__form_btn" type="submit" data-bs-toggle="modal"
+            <button class="btn button contact__form_btn" type="submit" data-bs-toggle="modal"
               data-bs-target="#singup__send">Send</button>
           </form>
         </div>
@@ -377,9 +377,7 @@
 
 
   <script src="./js/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+  <script defer src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,106 @@
+/* header */
+
+.header__menu {
+    height: 105px;
+}
+.menu {
+    justify-content: space-between;
+    gap: 12px;
+}
+.menu nav ul {
+    gap: 8px;
+}
+
+.header__menu a{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.burger_btn {
+    min-width: 23px;
+    height: 15px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: none;
+
+}
+
+.burger_btn span {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 100%;  
+    height: 3px;    
+    background-color: var(--color-main-bg);
+    border-radius: 2px;
+}
+
+.burger_btn::before, .burger_btn::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    left: 0;
+    background-color: var(--color-main-bg);
+}
+.burger_btn::before{
+    top: 0
+}
+.burger_btn::after{
+    bottom: 0;
+}
+.header__icon {
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.ic_tw, .ic_tw_footer {
+    background-image: url('../img/social_media/tw_green.svg');    
+}
+.ic_fb, .ic_fb_footer {
+    background-image: url('../img/social_media/fb_green.svg'); 
+}
+.ic_in, .ic_in_footer {
+    background-image: url('../img/social_media/in_green.svg'); 
+}
+.ic_m {
+    background-image: url('../img/social_media/m_green_ligth.png'); 
+}
+.ic_m_footer {
+    background-image: url('../img/social_media/m_green_black.png'); 
+}
+
+
+@media (max-width: 992px) {
+    .logo__header {
+        padding-left: calc(50% - 90px)
+    }
+    .ic_tw {
+        background-image: url('../img/social_media/tw_black.svg');    
+    }
+    .ic_fb {
+        background-image: url('../img/social_media/fb_black.svg'); 
+    }
+    .ic_in {
+        background-image: url('../img/social_media/in_black.svg'); 
+    }
+    .ic_m {
+        background-image: url('../img/social_media/m_black.png'); 
+    }
+    .collapse_menu {
+        margin: 37px -12px -12px -12px;
+        background-color: var(--color-main-bg);
+    }
+}
+
+@media (min-width: 993px) {
+
+    .burger_btn {
+        display: none;
+    }
+    
+}
