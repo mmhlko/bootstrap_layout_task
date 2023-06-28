@@ -1,6 +1,6 @@
-const singupBtn = document.querySelector('.singup__btn')
-const sendButton = document.querySelector('#singup__send_btn')
-const singUpModal = document.querySelector('.modal__form')
+const singupBtn = document.querySelector('#singup__btn')
+const sendButton = document.querySelector('#send__form_modal')
+/* const singUpModal = document.querySelector('#modal__form') */
 
 
 singupBtn.onclick = (e) => {
